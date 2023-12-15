@@ -1,0 +1,21 @@
+:root {
+    --color-dark: rgb(0, 0, 0);
+    --color-light: rgb(255, 255, 255);
+    --color-light-gray: rgb(217, 217, 217);
+    --color-light-beige: rgb(253, 244, 230);
+    --border-radius: 56px;
+    --border: 1px solid var(--color-light);
+    --font-family-base: 'Raleway', 'sans-serif;';
+    --font-family-accent: 'GFS Didot', 'sans-serif';
+    --transition-duration: 0.2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+

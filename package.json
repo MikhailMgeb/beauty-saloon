@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --config=webpack.development.config.js",
     "build:prod": "webpack ",
-    "lint": "eslint . && stylelint ./src/**/*.css",
+    "lint": "eslint ./src && stylelint ./src/**/*.css",
+    "lint:fix": "eslint --fix ./src && stylelint --fix ./src/**/*.css",
     "start": "webpack serve --config=webpack.development.config.js"
   },
   "keywords": [],
