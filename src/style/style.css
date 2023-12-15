@@ -2,6 +2,7 @@
     --color-dark: rgb(0, 0, 0);
     --color-light: rgb(255, 255, 255);
     --color-light-gray: rgb(217, 217, 217);
+    --color-dark-gray: rgb(150, 150, 150);
     --color-light-beige: rgb(253, 244, 230);
     --border-radius: 56px;
     --border: 1px solid var(--color-light);
@@ -19,3 +20,94 @@ h6 {
     font-weight: 400;
 }
 
+a:hover {
+    color: var(--color-dark-gray)
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+button {
+    display: inline-flex;
+    align-items: center;
+
+    height: 46px;
+    padding-inline: 26px;
+}
+
+button:hover {
+    border: none;
+
+    background-color: var(--color-dark-gray);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    column-gap: 20px;
+
+    background-color: var(--color-dark);
+}
+
+.header-menu-list {
+    display: flex;
+
+    column-gap: 60px;
+}
+
+.header-menu-link {
+    display: inline-flex;
+    align-items: center;
+
+    height: 90px;
+
+    color: var(--color-light);
+    font-weight: 400;
+    font-size: 20px;
+    font-family: var(--font-family-base);
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    column-gap: 7px;
+}
+
+.header-menu-link.is-current::after {
+    content: '';
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-light);
+}
+
+.header__logo-image {
+    width: 272px;
+    height: 95px;
+}
+
+.header-actions-button {
+    display: flex;
+    align-items: center;
+
+    color: var(--color-dark);
+    font-weight: 400;
+    font-size: 20px;
+    font-family: var(--font-family-base);
+    line-height: 24px;
+    letter-spacing: 1.2px;
+    column-gap: 10px;
+
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    background-color: var(--color-light);
+}
