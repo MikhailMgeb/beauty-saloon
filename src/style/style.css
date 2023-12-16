@@ -51,6 +51,8 @@ button:hover {
     justify-content: space-around;
     align-items: center;
 
+    padding-inline: 10px;
+
     column-gap: 20px;
 
     background-color: var(--color-dark);
@@ -58,8 +60,9 @@ button:hover {
 
 .header-menu-list {
     display: flex;
+    flex-wrap: wrap;
 
-    column-gap: 60px;
+    column-gap: 40px;
 }
 
 .header-menu-link {
@@ -90,8 +93,16 @@ button:hover {
 }
 
 .header__logo-image {
-    width: 272px;
+    width: 90%;
     height: 95px;
+}
+
+.header-actions {
+    display: flex;
+
+    padding-right: 10px;
+
+    column-gap: 10px;
 }
 
 .header-actions-button {
@@ -110,4 +121,89 @@ button:hover {
     border-radius: var(--border-radius);
 
     background-color: var(--color-light);
+}
+
+.header-actions-select {
+    align-items: center;
+
+    padding: 10px 5px;
+
+    color: var(--color-dark);
+    font-weight: 400;
+    font-size: 20px;
+    font-family: var(--font-family-base);
+    line-height: 24px;
+    letter-spacing: 1.2px;
+    column-gap: 10px;
+
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    background-color: var(--color-light);
+}
+
+@media (max-width: 1100px) {
+    .header {
+        flex-wrap: wrap;
+        row-gap: 10px;
+
+        padding: 20px;
+        padding-inline: 10px;
+    }
+
+    .header-menu {
+        order: 1;
+
+        flex-basis: 100%;
+    }
+
+    .header-menu-link {
+        height: 50px;
+    }
+
+    .header-menu-list {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 760px) {
+    button {
+        padding-inline: 20px;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .header-menu-link {
+        flex-direction: column;
+        justify-content: center;
+
+        height: 32px;
+
+        column-gap: 10px;
+    }
+
+    .header-menu-list {
+        justify-content: space-around;
+    }
+
+    .header-actions {
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 440px) {
+    .header-actions {
+        gap: 50px;
+    }
+
+    .header-menu-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-actions-button-text {
+        display: none;
+    }
 }
