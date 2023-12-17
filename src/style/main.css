@@ -1,0 +1,35 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0b0d0c;
+    color: white;
+    font-family: 'Raleway', 'sans-serif';
+}
+.contact-block-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 2rem;
+    margin-left: 40px;
+}
+
+.contact-block-text-other {
+}
+
+.contact-block-text-main {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.contact-block-text-btn {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 10px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
