@@ -12,10 +12,11 @@
     justify-content: center;
     align-items: start;
     font-size: 2rem;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 
 .contact-block-text-other {
+    margin-bottom: 20px;
 }
 
 .contact-block-text-main {
