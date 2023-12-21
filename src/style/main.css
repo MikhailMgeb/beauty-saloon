@@ -92,6 +92,7 @@
 }
 
 .about__block-title {
+    max-width: 674px;
     margin-bottom: 20px;
 
     color: black;
@@ -102,13 +103,12 @@
     text-transform: uppercase;
 }
 
-.about__block-text {
-    margin-bottom: 30px;
+.about__block-text {    
+    max-width: 619px;
 
     font-weight: 400;
     font-size: 25px;
     font-family: var(--font-family-accent);
-    text-align: right;
 }
 
 @media (max-width: 1100px) {
@@ -162,16 +162,11 @@
 
 @media (max-width: 802px) {
     .about {
+        flex-direction: column;
         gap: 0;
+        align-items: center;
 
         margin: 5px;
-    }
-}
-
-@media (max-width: 802px) {
-    .about {
-        flex-direction: column;
-        align-items: center;
     }
 
     .about__block-title {
@@ -182,5 +177,92 @@
 
     .about__block-text {
         text-align: center;
+    }
+}
+
+
+
+.choose {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+
+    color: var(--color-dark);
+    font-family: Raleway, sans-serif;
+
+    background-color: var(--color-light);
+}
+
+.choose__block {
+    position: relative;
+
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 50px;
+
+    text-align: center;
+}
+
+.choose__block-title {
+    margin-bottom: 20px;
+
+    color: black;
+    font-weight: 400;
+    font-size: 70px;
+    font-family: var(--font-family-accent);
+    line-height: 100px;
+    text-transform: uppercase;
+}
+
+.choose__carousel-block {
+    position: absolute;
+    left: -180px;
+    bottom: 0;
+
+    display: flex;
+    gap: 8px;
+}
+
+@media (max-width: 760px) {
+    .choose {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center
+    }
+}
+
+@media (max-width: 1485px) {
+    .choose {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    
+        color: var(--color-dark);
+        font-family: Raleway, sans-serif;
+    
+        background-color: var(--color-light);
+    }
+
+    .choose__carousel-block {
+        position:relative;
+
+        margin: 50px 0;
+    }
+
+    .choose__block {
+        display: flex;
+        flex-direction: column;
+
+        margin: 0;
+    }
+}
+
+@media (max-width: 1050px) {
+    .choose__carousel-block {
+        position: relative;
+        left: 0;
+
+        flex-direction: column;
     }
 }
