@@ -85,11 +85,15 @@ button:hover {
     content: '';
 
     width: 8px;
-    height: 8px;
 
     border-radius: 50%;
+    aspect-ratio: 1;
 
     background-color: var(--color-light);
+}
+
+.is-current:hover {
+    color: var(--color-dark-gray)
 }
 
 .header__logo-image {
